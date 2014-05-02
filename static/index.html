@@ -218,10 +218,13 @@
 			</ul>
 		</div>
 	</section>
-	
+
 	<script src="//hb-script.qiniudn.com/jquery.min.js"></script>
 	<script src="//cdn.staticfile.org/jquery.lazyloadxt/1.0.2/jquery.lazyloadxt.min.js"></script>
 	<script src="//hb-script.qiniudn.com/skel.min.js"></script>
 	<script src="//hb-script.qiniudn.com/init-app.js"></script>
+	<script>
+	$(document).ready(function(){var e=document.createElement("input");"placeholder"in e||($(document).on({focus:function(){var e=$(this);e.val()==e.attr("placeholder")&&(e.val(""),e.removeClass("placeholder"))},blur:function(){var e=$(this);(""==e.val()||e.val()==e.attr("placeholder"))&&(e.addClass("placeholder"),e.val(e.attr("placeholder")))}},"input[placeholder]"),$(document).on("submit","form",function(){$(this).find("input[placeholder]").each(function(){var e=$(this);e.val()==e.attr("placeholder")&&e.val("")})}))});
+	</script>
 </body>
 </html>
