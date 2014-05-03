@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="http://hb-style.qiniudn.com/style.css" />
 		<link rel="stylesheet" href="http://hb-style.qiniudn.com/style-wide.css" />
 	</noscript>
+	<script src="//hb-script.qiniudn.com/skel.min.js"></script>
+	<script>var _settings={skelJS:{prefix:"http://hb-style.qiniudn.com/style",resetCSS:!0,boxModel:"border",containers:1200,useOrientation:!0,breakpoints:{widest:{range:"*",containers:1360,grid:{gutters:50},hasStyleSheet:!1},wide:{range:"-1680",containers:1200,grid:{gutters:40}},normal:{range:"-1280",containers:960,grid:{gutters:30},lockViewport:!0},narrow:{range:"-1000",containers:"100%",grid:{gutters:25,collapse:!0},lockViewport:!0},mobile:{range:"-640",containers:"100%",grid:{gutters:10,collapse:!0},lockViewport:!0}}}};skel.init(_settings.skelJS);</script>
 	<!--[if lte IE 8]><link rel="stylesheet" href="//hb-style.qiniudn.com/ie/v8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="//hb-style.qiniudn.com/ie/v9.css" /><![endif]-->
 </head>
@@ -220,11 +222,9 @@
 	</section>
 
 	<script src="//hb-script.qiniudn.com/jquery.min.js"></script>
+	<script src="//cdn.staticfile.org/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
 	<script src="//cdn.staticfile.org/jquery.lazyloadxt/1.0.2/jquery.lazyloadxt.min.js"></script>
-	<script src="//hb-script.qiniudn.com/skel.min.js"></script>
-	<script src="//hb-script.qiniudn.com/init-app.js"></script>
-	<script>
-	$(document).ready(function(){var e=document.createElement("input");"placeholder"in e||($(document).on({focus:function(){var e=$(this);e.val()==e.attr("placeholder")&&(e.val(""),e.removeClass("placeholder"))},blur:function(){var e=$(this);(""==e.val()||e.val()==e.attr("placeholder"))&&(e.addClass("placeholder"),e.val(e.attr("placeholder")))}},"input[placeholder]"),$(document).on("submit","form",function(){$(this).find("input[placeholder]").each(function(){var e=$(this);e.val()==e.attr("placeholder")&&e.val("")})}))});
-	</script>
+	
+	<script src="//hb-script.qiniudn.com/init-app.js?v=2.1"></script>
 </body>
 </html>

@@ -1,33 +1,3 @@
-/*
-	Tessellate 1.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/*********************************************************************************/
-/* Settings                                                                      */
-/*********************************************************************************/
-
-	var _settings = {
-
-		// skelJS
-			skelJS: {
-				prefix: 'http://hb-style.qiniudn.com/style',
-				resetCSS: true,
-				boxModel: 'border',
-				containers: 1200,
-				useOrientation: true,
-				breakpoints: {
-					'widest': { range: '*', containers: 1360, grid: { gutters: 50 }, hasStyleSheet: false },
-					'wide': { range: '-1680', containers: 1200, grid: { gutters: 40 } },
-					'normal': { range: '-1280', containers: 960, grid: { gutters: 30 }, lockViewport: true },
-					'narrow': { range: '-1000', containers: '100%', grid: { gutters: 25, collapse: true }, lockViewport: true },
-					'mobile': { range: '-640', containers: '100%', grid: { gutters: 10, collapse: true }, lockViewport: true }
-				}
-			}
-
-	};
-
 /*********************************************************************************/
 /* jQuery Plugins                                                                */
 /*********************************************************************************/
@@ -63,14 +33,13 @@
 /* Initialize                                                                    */
 /*********************************************************************************/
 
-	// skelJS
-		skel.init(_settings.skelJS);
-
 	// jQuery
 		jQuery(function() {
 
 			var $window = $(window);
 
+			// polyfill for placeholder
+			$('input, textarea').placeholder();
 
 			// Scrolly links
 				$('.scrolly').n33_scrolly();
